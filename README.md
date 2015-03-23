@@ -6,3 +6,6 @@
 See the [generic requirements](https://sites.google.com/a/digital.landregistry.gov.uk/migration/home/auditing#requirements)
 ## Implementation (Configuration)
 See [RabbitMQ Logging](https://sites.google.com/a/digital.landregistry.gov.uk/migration/home/auditing#rabbitmq-logging)
+
+## Reference
+* See https://github.com/LandRegistry/logstash-configuration for details.
