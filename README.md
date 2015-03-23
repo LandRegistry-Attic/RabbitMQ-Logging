@@ -5,7 +5,7 @@
 ## Requirements
 See the [generic requirements](https://sites.google.com/a/digital.landregistry.gov.uk/migration/home/auditing#requirements)
 ## Implementation (Configuration)
-* See [RabbitMQ Logging](https://sites.google.com/a/digital.landregistry.gov.uk/migration/home/auditing#rabbitmq-logging)
+* See [RabbitMQ Logging](https://sites.google.com/a/digital.landregistry.gov.uk/migration/home/auditing#rabbitmq-logging); it should be possible to parse the log file directly.
 * A [Logstash plugin](http://www.elastic.co/guide/en/logstash/current/plugins-inputs-rabbitmq.html) that can consume messages from the '	amq.rabbitmq.trace' topic exchange may be an alternative approach.
 
 ## Reference
