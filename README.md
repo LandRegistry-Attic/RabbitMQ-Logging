@@ -10,3 +10,17 @@ See the [generic requirements](https://sites.google.com/a/digital.landregistry.g
 
 ## Reference
 See https://github.com/LandRegistry/logstash-configuration for details.
+
+## Testing
+* Execution (from local logstash deployment):
+````
+$ bin/logstash agent -f /c/Users/User/RabbitMQ-Logging/logstash.conf                                                                                                                                                 
+...
+{                                                                                                                                                                                                                    
+       "message" => "TEST MESSAGE!",                                                                                                                                                                                 
+      "@version" => "1",                                                                                                                                                                                             
+    "@timestamp" => "2015-03-24T13:15:09.793Z"                                                                                                                                                                       
+}                                                                                                                                                                                                                    
+````
+
+* Messages sent manually to local RabbitMQ instance via UI Manager.
