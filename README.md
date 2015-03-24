@@ -2,6 +2,7 @@
 * Audit-logging facility, for use with RabbitMQ's  ["Firehose Tracer"](http://www.rabbitmq.com/firehose.html).
 * The log files or messages so produced can be directly processed by [Logstash](http://www.logstash.net) - no need for Python etc.
 
+
 ## Requirements
 See the [generic requirements](https://sites.google.com/a/digital.landregistry.gov.uk/migration/home/auditing#requirements)
 ## Implementation (Configuration)
@@ -11,7 +12,7 @@ See the [generic requirements](https://sites.google.com/a/digital.landregistry.g
 ## Reference
 See https://github.com/LandRegistry/logstash-configuration for details.
 
-## Testing
+## Testing (local agent)
 * Execution (from local logstash deployment):
 ````
 $ bin/logstash agent -f /c/Users/User/RabbitMQ-Logging/logstash.conf                                                                                                                                                 
