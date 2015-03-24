@@ -16,7 +16,7 @@ See https://github.com/LandRegistry/logstash-configuration for details.
 ## Testing (local agent)
 * Execution (from local logstash deployment):
 ````
-$ bin/logstash agent -f /c/Users/User/RabbitMQ-Logging/logstash.conf                                                                                                                                                 
+$ bin/logstash agent -f /c/Users/User/RabbitMQ-Logging/logstash-redis.conf                                                                                                                                                 
 ...
 {                                                                                                                                                                                                                    
        "message" => "TEST MESSAGE!",                                                                                                                                                                                 
