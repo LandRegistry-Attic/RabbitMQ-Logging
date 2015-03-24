@@ -11,7 +11,7 @@ See the [generic requirements](https://sites.google.com/a/digital.landregistry.g
 * Note however that this plugin is at "Milestone 1", which means that it may not be very robust.
 
 ## Reference
-See https://github.com/LandRegistry/logstash-configuration for details.
+See https://sites.google.com/a/digital.landregistry.gov.uk/migration/home/research/logstash for details.
 
 ## Testing (local agent)
 * Execution (from local logstash deployment):
