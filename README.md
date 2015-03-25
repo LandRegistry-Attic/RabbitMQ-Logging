@@ -7,15 +7,16 @@
 See the [generic requirements](https://sites.google.com/a/digital.landregistry.gov.uk/migration/home/auditing#requirements)
 ## Implementation (Configuration)
 * See [RabbitMQ Logging](https://sites.google.com/a/digital.landregistry.gov.uk/migration/home/auditing#rabbitmq-logging); it should be possible to parse the log file directly.
-* A [Logstash plugin](http://www.elastic.co/guide/en/logstash/current/plugins-inputs-rabbitmq.html) that can consume messages from the '	amq.rabbitmq.trace' topic exchange may be an alternative approach.
+* A [Logstash plugin](http://www.elastic.co/guide/en/logstash/current/plugins-inputs-rabbitmq.html) that can consume messages from the '	amq.rabbitmq.trace' topic exchange is used instead.
+* Note however that this plugin is at "Milestone 1", which means that it may not be very robust.
 
 ## Reference
-See https://github.com/LandRegistry/logstash-configuration for details.
+See https://sites.google.com/a/digital.landregistry.gov.uk/migration/home/research/logstash for details.
 
 ## Testing (local agent)
 * Execution (from local logstash deployment):
 ````
-$ bin/logstash agent -f /c/Users/User/RabbitMQ-Logging/logstash.conf                                                                                                                                                 
+$ bin/logstash agent -f /c/Users/User/RabbitMQ-Logging/logstash-redis.conf                                                                                                                                                 
 ...
 {                                                                                                                                                                                                                    
        "message" => "TEST MESSAGE!",                                                                                                                                                                                 
@@ -24,4 +25,4 @@ $ bin/logstash agent -f /c/Users/User/RabbitMQ-Logging/logstash.conf
 }                                                                                                                                                                                                                    
 ````
 
-* Messages sent manually to local RabbitMQ instance via UI Manager.
+* Messages sent manually to local Logstash agent via RabbitMQ UI Manager, then onwards to redis/elasticsearch etc.
