@@ -25,4 +25,4 @@ $ bin/logstash agent -f /c/Users/User/RabbitMQ-Logging/logstash-redis.conf
 }                                                                                                                                                                                                                    
 ````
 
-* Messages sent manually to local RabbitMQ instance via UI Manager, then onwards to redis/elasticsearch etc.
+* Messages sent manually to local Logstash agent via RabbitMQ UI Manager, then onwards to redis/elasticsearch etc.
